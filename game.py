@@ -112,7 +112,8 @@ def room21():
 
 def room22():
     #room22
-    print("This door is locked.")
+    #Rogelio Jeronimo
+    print("Playing in the Fun House.")
 
 def room23():
     #room23
