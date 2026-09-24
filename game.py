@@ -97,8 +97,8 @@ def room18():
     print("Dark Gengar.")
 
 def room19():
-    #room19
-    print("This door is locked.")
+    #Patricia Flores
+    print("Star Wars")
 
 def room20():
     #room20
