@@ -137,7 +137,9 @@ def room29():
 
 def room30():
     #room30
-    print("This door is locked.")
+    #Tonya McIntyre
+    print("Wise One")
+    
 
 def room31():
     #room31
