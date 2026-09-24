@@ -13,7 +13,8 @@ import time
 
 def room1():
     #room1
-    print("This door is locked.")
+    #Ted :)
+    print("Walt Disney World Vacation")
 
 def room2():
     #room2
