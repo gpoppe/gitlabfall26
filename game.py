@@ -114,7 +114,8 @@ def room25():
 
 def room26():
     #room26
-    print("This door is locked.")
+    #Janelle Piva
+    print("The Haunted School.")
 
 def room27():
     #room27
