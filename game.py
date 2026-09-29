@@ -42,8 +42,96 @@ def room6():
 
 def room7():
     #room7
-    print("This door is locked.")
+    #Joanne Dragich
+    print("Your first Ducks game!")
+    #Joanne Dragich CTC389 Lab 8 Your First Ducks Game
+    def playagain():
+        print("Would you like to play Your First Ducks Game?")
+        print("Type 1 for No and 2 for Yes.")
+        play = 0
+        play = int(input(">"))
+        return play
 
+    play = playagain()
+
+    if (play == 1):
+        print("Thanks for playing and let's go, Ducks!")
+    while (play == 2):
+        print("You exit the freeway on your way to the arena. Where do you want to park?")
+        print("Type 1 - Pull into the free Katella or Cerritos parking structures.")
+        print("Type 2 - Pay to park in the lot of a nearby business and walk over.")
+        print("Type 3 - Pay extra for the new River parking structure.")
+        parking = int(input(">"))
+        if (parking == 1):
+            print("It may be free, but it's super crowded. You are trapped by the traffic at the end of the game and die of starvation.")
+            play = 1
+            playagain()
+        elif (parking == 2):
+            print("You go bankrupt paying the ridiculous parking fees. Seriously, you know the structures are free, right?")
+            play = 1
+            playagain()
+        elif (parking == 3):
+            play = 1
+            print("Wow, that was easy and so close. This was totally worth the money. Let's head into the arena.")
+            print("Where do you head first?")
+            print("Type 1 - Take a picture with Wild Wing.")
+            print("Type 2 - Get a free 1st game certificate at Guest Services.")
+            print("Type 3 - Check out the food court options.")
+            choice2 = int(input(">"))
+            if (choice2 == 1):
+                print("You took a picture, but hunger made you lightheaded. You fell, hit your head, and died.")
+                play = 1
+                playagain()
+            elif (choice2 == 2):
+                print("That certificate is just a dust-catcher. Now, the food lines are super long. You die of old age waiting in line.")
+                play = 1
+                playagain()
+            elif (choice2 == 3):
+                print("Oh, wow! There are some great options here. The lines are still short this early, so you have your pick. Where do you go?")
+                print("Type 1 - Hat Trick Hawaiian")
+                print("Type 2 - Feather & Flame BBQ")
+                print("Type 3 - El Patito Taqueria")
+                choice3 = int(input(">"))
+                if (choice3 == 1):
+                    print("It was overpriced, and you died of food poisoning.")
+                    play = 1
+                    playagain()
+                elif (choice3 == 2):
+                    print("The liquid smoke chokes you out before you make it 10 feet.")
+                    play = 1
+                    playagain()
+                elif (choice3 == 3):
+                    print("The masa quesadilla, Red Line Margarita, and bag of churros are epic. Great choice! The game started. It's time to head to your seat.")
+                    print("Type 1 - Walk right in ignoring the guard telling you to stop.")
+                    print("Type 2 - Stop and talk to some Florida fans.")
+                    print("Type 3 - Wait until the refs stop play to walk to your seat.")
+                    choice4 = int(input(">"))
+                    if (choice4 == 1):
+                        print("You get hit in the head with a puck. Yeah, that rule is there because fans have gotten hurt and died.")
+                        play = 1
+                        playagain()
+                    elif (choice4 == 2):
+                        print("The Florida fans are rats just like their team. They murder you and hide the body. Your family buries an empty casket.")
+                        play = 1
+                        playagain()
+                    elif (choice4 == 3):
+                        print("The refs blow the play dead, and you walk to your seat. You have a great view!")
+                        print("You're having a great time. There are 10 minutes left in the game. What do you do?")
+                        print("Type 1 - Leave early to beat the traffic.")
+                        print("Type 2 - Leave to buy a beer.")
+                        print("Type 3 - Stay in your seat until the end.")
+                        choice5 = int(input(">"))
+                        if (choice5 == 1):
+                            print("As you approach your car, you hear a huge roar and the goal horn. You missed the biggest goal of the season? You died of embarassment.")
+                            play = 1
+                            playagain()
+                        elif (choice5 == 2):
+                            print("A beer in the last 10 minutes? They stopped selling them after the second intermission. You hear a huge cheer and the goal horn. You missed the biggest goal of the year, and you have no beer. You died of embarassment.")
+                            play = 1
+                            playagain()
+                        elif (choice5 == 3):
+                            print("You saw the biggest goal of the year! You swear afterwards that Leo Carlsson pointed right at you during his celly. You get a high five from Wild Wing on the way out. You easily pull out of the River Garage and head home. It was the best night!")
+                            playagain()
 def room8():
     #room8
     print("Welcome to the best game!")
