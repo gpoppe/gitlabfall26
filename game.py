@@ -1656,6 +1656,117 @@ def room26():
     #Janelle Piva
     print("The Haunted School.")
 
+    play = "yes"
+
+    while play == "yes":
+
+        name = input("Welcome to the haunted school! What is your name? ")
+
+        print("Hello", name, "you stayed late at school and suddenly all the lights went out.")
+        print("You hear the doors lock behind you. You need to find a way out!")
+        print("You hear a strange noise coming down the hallway and need to decide where to go.")
+
+        print("1. Classroom")
+        print("2. Library")
+        print("3. Gym")
+
+        menu = int(input("Where do you go? "))
+
+        if menu == 1:
+            print("You enter the classroom and the door locks behind you.")
+            print(name, "you are trapped!")
+
+        elif menu == 2:
+            print("You enter the library and hear the door slam behind you.")
+            print("You notice three items sitting on the table. One of them might help you escape.")
+
+            items = ["1. Flashlight", "2. Book", "3. Pencil"]
+
+            for i in items:
+                print(i)
+
+            menu = int(input("Which item do you take? "))
+
+            if menu == 1:
+                print("You grab a flashlight and turn it on.")
+                print("The light reveals three hallways hidden behind the bookshelves.")
+
+                print("1. Upstairs hallway")
+                print("2. Downstairs hallway")
+                print("3. Main hallway")
+
+                menu = int(input("Which hallway do you take? "))
+
+            if menu == 1:
+                print("You walk upstairs and hear footsteps behind you.")
+                print("Suddenly a black cat jumps out in front of you!")
+
+                cat = input("What would you name the black cat? ")
+
+                print(cat, "runs away and you continue down the hallway.")
+                print("You hear footsteps behind you.")
+                print("You turn around and see a ghost blocking your path!")
+
+                print("1. Hide")
+                print("2. Run")
+                print("3. Distract the ghost")
+
+                menu = int(input("What do you do? "))
+
+                if menu == 1:
+                    print("You hide, but the ghost finds you.")
+                    print(name, "you did not escape the haunted school!")
+
+                elif menu == 2:
+                    print("You run, but the ghost catches up to you.")
+                    print(name, "you did not escape the haunted school!")
+
+                elif menu == 3:
+                    print("You throw an object down the hallway and distract the ghost.")
+                    print("You run downstairs and see three possible exits.")
+
+                    print("1. Front doors")
+                    print("2. Parking lot gate")
+                    print("3. Emergency exit")
+
+                    menu = int(input("Which exit do you try? "))
+
+                    if menu == 1:
+                        print("You run to the front doors, but they are locked.")
+                        print(name, "you did not escape the haunted school!")
+
+                    elif menu == 2:
+                        print("You run to the parking lot gate, but it suddenly locks.")
+                        print(name, "you did not escape the haunted school!")
+
+                    elif menu == 3:
+                        print("You push open the emergency exit and escape!")
+                        print(name, "you escaped the haunted school!")
+
+            elif menu == 2:
+                print("You go downstairs and become trapped in the basement.")
+                print(name, "you did not escape the haunted school!")
+
+            elif menu == 3:
+                print("You take the main hallway and end up back where you started.")
+                print(name, "you did not escape the haunted school!")
+
+        elif menu == 2:
+            print("You open the book and the pages begin turning by themselves.")
+            print("You become trapped in the haunted story.")
+            print(name, "you did not escape the haunted school!")
+
+        elif menu == 3:
+            print("You pick up the pencil and it begins writing by itself.")
+            print("The library doors lock and the lights go out.")
+            print(name, "you did not escape the haunted school!")
+
+        elif menu == 3:
+            print("You enter the gym, but there is no way out.")
+            print(name, "you did not escape the haunted school!")
+
+        play = input("Would you like to play again? ")  
+
 def room27():
     #room27
     print("This door is locked.")
