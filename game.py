@@ -1065,6 +1065,153 @@ def room13():
     #room13
     #Muhammad Mahmood
     print("Fallout 389")
+    play = "yes"
+
+    while play == "yes":
+        name = input("What is your name? ")
+
+        #Final addition (List)
+        inventory = []
+
+        print("Hello", name)
+        print("You wake up in the middle of a destroyed fallout bunker. ")
+        print("Emergency lights are flashing that send out a warning. ")
+        print("It says: Warning the bunker will lose power soon. Abandon immediately. ")
+
+
+        #Choice 1
+
+        print("You come across three hallways.")
+        print("1 leads to a red hallway.")
+        print("2 leads to a blue hallway.")
+        print("3 leads to a yellow hallway.")
+
+        choice1 = int(input("Which hallway will you choose? "))
+        if choice1 == 1:
+            print("The red hallway leads to a damaged reactor.")
+            print("Radiation fills the room.")
+            print(name, "has died.")
+        elif choice1 == 2:
+            print("The red hallway takes you to an elevator")
+            print("You board and arrive at the next level above.")
+        elif choice1 == 3:
+            print("The yellow hallway leads to a warp room.")
+            print("You are warped to the next room above.")
+        else:
+            print("Invalid option")
+
+        if choice1 == 2 or choice1 == 3:
+            #Choice 2
+            print("You see another 3 rooms. ")
+            print("1 is a medical room")
+            print("2 is a security room")
+            print("3 is a storage room")
+
+            choice2 = int(input("Which room do you enter? "))
+            if choice2 == 1:
+                print("The door locks behind you.")
+                print("There are no other exits.")
+                print(name, "is trapped and has died.")
+            elif choice2 == 2:
+                print("Inside the security room, you find a security card.")
+                print("You take the access card and continue on your way.")
+
+                #Final addition
+                inventory.append("Security card")
+                print("Your inventory: ")
+                for x in inventory:
+                    print(x)
+
+
+            elif choice2 == 3:
+                print("The storage room is filled with boxes.")
+                print("Inside one of the boxes you find an access card.")
+                print("You take the access card and continue on your way.")
+
+                #Final Addition (Loop)
+                inventory.append("Security card")
+                print("You inventory: ")
+                for x in inventory:
+                    print(x)
+
+            else:
+                print("Invalid option")
+
+            if choice2 == 2 or choice2 == 3:
+                #Choice 3
+                    print("You arrive at a security door.")
+                    print("There are 3 ways to deal with this door:")
+                    print("1: Break the door")
+                    print("2: Use the access card")
+                    print("3: Search for another path")
+
+                    choice3 = int(input("How do you proceed? "))
+                    if choice3 == 1:
+                        print("You ram the door with all of your might.")
+                        print("To your surprise, the door collapses with ease.")
+                        print("You proceed into the room.")
+                    elif choice3 == 2:
+                        print("You take the security key from your inventory.")
+                        print("You use the access key.")
+                        print("The door beeps and opens, the rust screaming in exhaustion.")
+
+                        #Final addition (List)
+                        inventory.pop(0)
+
+                    elif choice3 == 3:
+                        print("You search for a different route.")
+                        print("However, you get lost in the labyrinth and perish.")
+                        print(name,"has died.")
+                    else:
+                        print("Invalid option")
+
+                    if choice3 == 1 or choice3 == 2:
+                    #Choice 4
+                        print("You enter the control room with three options.")
+                        print("1 is to restore power to the old vault.")
+                        print("2 is to send out a distres signal to the wasteland.")
+                        print("3 is to explore the garage for a car to drive out.")
+                        
+                        choice4 = int(input("Which option do you choose?"))
+                        if choice4 == 1:
+                            print("Restoring the power wakes up the security bots.")
+                            print("The bots surround and subdue you.")
+                            print(name,"has died.")
+                        elif choice4 == 2:
+                            print("The distress signal is sent. But the wasteland yields no response.")
+                            print("The station runs out of power and no one comes to your aid.")
+                            print(name,"has died")
+                        elif choice4 == 3:
+                            print("The garage unlocks at a touch of the button of the main computer.")
+                            print("You hurry towards the garage.")
+
+                            #Choice 5
+                            print("You arrive at the garage and see three cars.")
+                            print("1 is a red car")
+                            print("2 is a blue car")
+                            print("3 is a yellow car")
+
+                            choice5 = int(input("Which car do you take? "))
+                            if choice5 == 1:
+                                print("The red car is out of gas.")
+                                print("The garage locks you in before you can escape.")
+                                print(name,"has died.")
+                            elif choice5 == 2:
+                                print("The blue car roars to life!")
+                                print("You drive off into the wasteland, leaving the vault behind.")
+                                print("Congratulations",name,"you escaped the Vault!")
+                            elif choice5 == 3:
+                                print("The yellow car is too damaged to drive.")
+                                print("The garage locks you in before you can escape.")
+                                print(name,"has died.")
+                            else:
+                                print("Invalid respoonse")
+                        else:
+                            print("Invalid response")
+
+
+        play = input("Would you like to play again? yes or no?")
+    
 
 def room14():
     #room14
