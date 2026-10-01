@@ -1469,8 +1469,192 @@ def room20():
 def room21():
     #room21
     #Dawei Sun
-    print("The Lost Jade Pendant")
+    inventory = []
 
+    print("The Lost Jade Pendant")
+    print("")
+
+    name = input("What is your name? ")
+
+    print("")
+    print("Hello " + name + "!")
+    print("You are visiting a Chinese history museum.")
+    print("You see an old jade pendant.")
+    print("You touch the pendant and suddenly see a bright light.")
+    print("When you open your eyes, you are in ancient China.")
+    print("You are in Chang'an during the Tang Dynasty.")
+    print("")
+
+    print("There are red lanterns, shops, and many people on the street.")
+    print("Where do you want to go?")
+    print("1. Tea house")
+    print("2. Market")
+    print("3. Temple")
+
+    choice1 = input("Choose 1, 2, or 3: ")
+
+    if choice1 == "1":
+        print("")
+        print("You go into the tea house.")
+        print("An old man tells you that he knows about the jade pendant.")
+
+    elif choice1 == "2":
+        print("")
+        print("You walk through the market.")
+        print("You see silk, food, fans, and porcelain.")
+        print("A merchant tells you to go to the tea house.")
+
+    elif choice1 == "3":
+        print("")
+        print("You go into the temple.")
+        print("A monk tells you to go to the tea house.")
+
+    print("")
+    print("At the tea house, an old man asks you a question.")
+    print("Which drink is important in Chinese culture?")
+    print("1. Coffee")
+    print("2. Tea")
+    print("3. Soda")
+
+    choice2 = input("Choose 1, 2, or 3: ")
+
+    if choice2 == "1":
+        print("")
+        print("The old man says, 'No, coffee is not the answer.'")
+        print("But he still gives you a map.")
+
+    elif choice2 == "2":
+        print("")
+        print("The old man says, 'Correct!'")
+        print("He gives you an old map.")
+
+    elif choice2 == "3":
+        print("")
+        print("The old man says, 'No, soda is not the answer.'")
+        print("But he still gives you a map.")
+
+    inventory.append("old map")
+
+    print("")
+    print("You put the old map in your bag.")
+
+    print("")
+    print("The map shows a village outside the city.")
+    print("How do you want to travel?")
+    print("1. Ride a horse")
+    print("2. Take a boat")
+    print("3. Ride in a carriage")
+
+    choice3 = input("Choose 1, 2, or 3: ")
+
+    if choice3 == "1":
+        print("")
+        print("You ride a horse.")
+        print("You see mountains and green fields.")
+        print("You arrive at a small village.")
+
+    elif choice3 == "2":
+        print("")
+        print("You take a boat.")
+        print("You hear someone playing the guzheng.")
+        print("You arrive at a small village.")
+
+    elif choice3 == "3":
+        print("")
+        print("You ride in a carriage.")
+        print("The road is long and bumpy.")
+        print("You arrive at a small village.")
+
+    print("")
+    print("The village is celebrating the Mid-Autumn Festival.")
+    print("People are eating mooncakes and carrying lanterns.")
+    print("A child tells you that a clue is inside a lantern.")
+    print("Which lantern do you choose?")
+    print("1. Dragon lantern")
+    print("2. Rabbit lantern")
+    print("3. Lotus lantern")
+
+    choice4 = input("Choose 1, 2, or 3: ")
+
+    if choice4 == "1":
+        print("")
+        print("You choose the dragon lantern.")
+        print("You find a note inside.")
+        print("The note tells you to go to an old pagoda.")
+        inventory.append("clue note")
+
+    elif choice4 == "2":
+        print("")
+        print("You choose the rabbit lantern.")
+        print("You see a picture of the Jade Rabbit.")
+        print("You also find a note.")
+        print("The note tells you to go to an old pagoda.")
+        inventory.append("clue note")
+
+    elif choice4 == "3":
+        print("")
+        print("You choose the lotus lantern.")
+        print("You find a small key and a note.")
+        print("The note tells you to go to an old pagoda.")
+        inventory.append("small key")
+        inventory.append("clue note")
+
+    print("")
+    print("You check your bag.")
+    print("You have:")
+
+    for item in inventory:
+        print(item)
+
+    print("")
+    print("You arrive at the old pagoda.")
+    print("Inside, you see three objects.")
+    print("Which object do you choose?")
+    print("1. Jade pendant")
+    print("2. Porcelain vase")
+    print("3. Calligraphy brush")
+
+    choice5 = input("Choose 1, 2, or 3: ")
+
+    if choice5 == "1":
+        print("")
+        print("You pick up the jade pendant.")
+        inventory.append("jade pendant")
+        print("A bright light fills the room.")
+        print("When you open your eyes, you are back in the museum.")
+        print("You made it home!")
+
+    elif choice5 == "2":
+        print("")
+        print("You pick up the porcelain vase.")
+        inventory.append("porcelain vase")
+        print("Nothing happens.")
+        print("Then you see the jade pendant glowing.")
+        print("You pick it up.")
+        inventory.append("jade pendant")
+        print("A bright light appears.")
+        print("You return to the museum.")
+
+    elif choice5 == "3":
+        print("")
+        print("You pick up the calligraphy brush.")
+        inventory.append("calligraphy brush")
+        print("Chinese characters begin to move in the air.")
+        print("Then you see the jade pendant glowing.")
+        print("You pick it up.")
+        inventory.append("jade pendant")
+        print("A bright light appears.")
+        print("You return to the museum.")
+
+    print("")
+    print("These are the items you collected:")
+
+    for item in inventory:
+        print(item)
+
+    print("")
+    print("Congratulations " + name + "!")
+    print("You found the Lost Jade Pendant!")
 
 def room22():
     #room22
