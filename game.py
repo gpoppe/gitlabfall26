@@ -2486,8 +2486,141 @@ def room19():
 def room20():
     #room20
     #Benson Chau
-    print("Big Bang Theory Sim")
+   play_again = "yes"
 
+   while play_again == "yes":
+       name = input("Welcome traveler, what is your name? ")
+       print("Hello " + name + ", you arrive at apartment 4A for Tuesday night Halo night, but something is off. Sheldon is not sitting in his spot, and a mysterious comic book glows on the coffee table.")
+
+       items = []
+       points = 0
+
+       #Decision 1
+       choice1 = float(input("You are standing in the living room. There are 3 things you notice. \n 1. Sheldon's empty spot on the couch \n 2. The whiteboard full of equations \n 3. Leonard's old Star Trek uniform on the chair \n What do you investigate? "))
+
+       if choice1 == 1:
+           print(name + " sits in Sheldon's spot. A small note falls out from under the cushion.")
+           items.append("mysterious note")
+           points = points + 5
+       elif choice1 == 2:
+           print(name + " studies the whiteboard and recognizes a string theory equation.")
+           items.append("chalk")
+           points = points + 10
+       elif choice1 == 3:
+           print(name + " puts on the Star Trek uniform and feels oddly powerful.")
+           items.append("Star Trek uniform")
+           points = points + 7
+       else:
+           print("You stand still, confused, but the comic book on the table flips open by itself.")
+
+       #Decision 2
+       choice2 = float(input("Raj appears from the hallway, too nervous to speak without liquic courage. He holds out 3 drinks. \n 2. Drink the glass of wine \n 2. Drink the Yoo-hoo \n 3. Drink the mystery smoothie \n Which drink do you choose? "))
+
+       if choice2 == 1:
+           print("Raj suddenly finds his voice and tells you Sheldon went to the comic book store.")
+           items.append("Raj's confidence")
+           points = points + 5
+       elif choice2 == 2:
+           print("The Yoo-hoo tastes exactly like Howard's favorite childhood memory.")
+           items.append("Yoo-hoo bottle")
+           points = points + 3
+       elif choice2 == 3:
+           print("The smoothie turns out to be one of Bernadette's microbiology experiments.")
+           items.append("petri dish smoothie")
+           points = points + 8
+       else:
+           print("You politely decline, and Raj just stares at you silently.")
+
+       rooms = float(input("You decide to check the other apartments in the building before heading out. You can check as many as you like. \n How many apartment doors do you want to knock on (1-5)?"))
+       door_names = ["Pennt's apartment", "the laundry room", "the elevator (still broken)", "48", "the stairwell"]
+       i = 0
+       while i < rooms and i < 5:
+           print("You knock on " + door_names[i] + ".")
+           if i == 0:
+               print("Penny hands you a comic book as a peace offering.")
+               items.append("comic book")
+               points = points + 4
+           elif i == 1:
+               print("You find a lone sock that definitely belongs to Howard.")
+               items.append("Howard's sock")
+           elif i == 2:
+               print("The elevator is still out of order, just like always.")
+           elif i == 3:
+               print("No one answers 48. It has been empty for years.")
+           else:
+               print("You hear a faint 'bazinga' echo up the stairwell.")
+               points = points + 2
+           i = i + 1
+
+       #Decision 3
+       choice3 = float(input("You finally reach the comic book store. Stuart greets you with 3 options. \n 1. Buy the rare Flash comic \n 2. Buy the Green Lantern action figure \n 3. Buy nothing and just look around \n What do you do? "))
+
+       if choice3 == 1:
+           print("Stuart nearly cries with joy as you buy the rare Flash comic.")
+           items.append("rare Flash comic")
+           points = points + 10
+       elif choice3 == 2:
+           print("The Green Lantern figure hums faintly, almost like it is glowing.")
+           items.append("Green Lantern figure")
+           points = points + 6
+       elif choice3 == 3:
+           print("You wander the store and overhear Sheldon arguing about Aquaman in the back room.")
+           points = points + 3
+       else:
+           print("Stuart looks disappointed but says nothing.")
+
+       #Decision 4
+       choice4 = float(input("You find Sheldon in the back room, mid-argument. He turns to you with 3 options. \n 1. Agree with Sheldon about Aquaman \n 2. Disagree with Sheldon about Aquaman \n 3. Change the subject to Star Wars \n What do you say? "))
+
+       if choice4 == 1:
+           print("Sheldon nods approvingly. 'Finally, someone with sense.'")
+           points = points + 8
+       elif choice4 == 2:
+           print("Sheldon gasps and launches into a 10 minute rebuttal.")
+           points = points + 5
+       elif choice4 == 3:
+           print("Sheldon pauses, intrigued, and the argument is instantly forgotten.")
+           points = points + 6
+       else:
+           print("Sheldon stares blankly, unsure how to process your silence.")
+
+       #Decision 5
+       choice5 = float(input("Sheldon finally agrees to come back for Halo night, but insists on 3 conditions. \n 1. You must sit in his spot before he gets back \n 2. You must recite the Roommate Agreement \n 3. You must challenge him to a game of Rock Paper Scissors Lizard Spock \n Which condition do you accept? "))
+
+       if choice5 == 1:
+           print("You dash back to the apartment and claim the spot just in time.")
+           points = points + 5
+       elif choice5 == 2:
+           print("You recite the Roommate Agreement from memory, word for word.")
+           points = points + 10
+       elif choice5 == 3:
+           print("You challenge Sheldon and somehow manage to tie him three times in a row.")
+           points = points + 9
+       else:
+           print("Sheldon shrugs and says the conditions no longer matter.")
+
+       print(name + ", you and Sheldon walk back to apartment 4A together just as everyone else arrives for Halo night. You win!")
+
+       print("Here is everything you collected on your journey:")
+       if items == []:
+           print("You collected nothing along the way")
+       else:
+           for item in items:
+               print("- " + item)
+
+       print("Your final nerd point score is: " + str(points))
+
+       if points >= 40:
+           print("That makes you an honorary member of the group, Sheldon approved.")
+       elif points >= 20:
+           print("Not bad. Leoanrd thinks you fit right in.")
+       else:
+           print("You might need to study up before the next game night.")
+
+       play_again = input("Would you like to play again? ")
+
+   print("Thanks for playing " + name + "! Bazinga!")
+ 
 def room21():
     #room21
     #Dawei Sun
