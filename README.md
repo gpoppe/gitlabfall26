@@ -1,7 +1,7 @@
 # gitlabfall26
 Student led RPG game
 
-#To run the game in a terminal open terminal and clone repository.
+#To run the game in a terminal, open your terminal and clone repository.
 
 git clone https://github.com/gpoppe/gitlabfall26.git
 
